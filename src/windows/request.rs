@@ -38,7 +38,7 @@ pub fn get_icon(ext: &str, size: i32) -> Result<Vec<u8>, Error> {
         get_icon_from_ext(
             ext,
             size,
-            if ext.eq("directory") {
+            if ext.eq("folder") {
                 FILE_ATTRIBUTE_DIRECTORY
             } else {
                 FILE_ATTRIBUTE_NORMAL
